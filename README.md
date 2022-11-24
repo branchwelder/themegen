@@ -26,7 +26,7 @@ This site is built using:
 ```css
 .contrast {
   --black: #000000;
-  --white: #ffffff;
+  --white: #FFFFFF;
   --pink: #FF1493;
   --red: #FF0000;
   --orange: #FFA500;
