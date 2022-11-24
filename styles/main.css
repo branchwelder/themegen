@@ -1,6 +1,20 @@
+@media only screen and (max-width: 767px) {
+  button {
+    font-size: 1rem;
+  }
+  #content {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  #content {
+    width: 80%;
+  }
+}
+
 #content {
   margin: auto;
-  width: 80%;
 }
 
 button {
