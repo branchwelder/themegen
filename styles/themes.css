@@ -1,16 +1,16 @@
 /* Contains classes that define CSS variables for different color themes.*/
 
 .contrast {
-  --black: black;
-  --white: white;
-  --pink: deeppink;
-  --red: red;
-  --orange: orange;
-  --yellow: yellow;
-  --green: lime;
-  --cyan: cyan;
-  --blue: deepskyblue;
-  --purple: orchid;
+  --black: #000000;
+  --white: #ffffff;
+  --pink: #FF1493;
+  --red: #FF0000;
+  --orange: #FFA500;
+  --yellow: #FFFF00;
+  --green: #00FF00;
+  --cyan: #00FFFF;
+  --blue: #00BFFF;
+  --purple: #DA70D6;
 }
 
 .nord {
