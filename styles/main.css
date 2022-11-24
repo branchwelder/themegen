@@ -1,0 +1,47 @@
+#content {
+  margin: auto;
+  width: 80%;
+}
+
+button {
+  background-color: var(--black);
+  cursor: pointer;
+  border: 1px solid var(--buttonColor);
+  color: var(--buttonColor);
+}
+
+button:hover {
+  background-color: var(--buttonColor);
+  color: var(--black);
+}
+
+.codeblock {
+  border: 1px solid var(--blue);
+  margin-bottom: 1rem;
+}
+
+.codeHead {
+  background-color: var(--blue);
+  padding: 0.2rem;
+  color: var(--black);
+  font-weight: bold;
+  text-align: right;
+}
+
+.desc {
+  display: flex;
+  justify-content: end;
+}
+
+pre {
+  margin: 0;
+}
+
+code {
+  font-family: "inconsolata", monospace;
+}
+
+#pane {
+  position: sticky;
+  top: 0;
+}

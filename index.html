@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <title>themer</title>
+    <!-- Import libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Import stylesheets -->
+    <link rel="stylesheet" href="./styles/themes.css" title="themes">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/marked.css">
+    <link rel="stylesheet" href="./styles/highlightjs.css">
+</head>
+<style>
+    @font-face {
+        font-family: "inter";
+        src: url("./fonts/Inter-Variable.ttf");
+        font-weight: 1 999;
+    }
+
+    @font-face {
+        font-family: "inconsolata";
+        src: url("./fonts/Inconsolata-Variable.ttf");
+        font-weight: 1 999;
+    }
+
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        background: var(--black);
+        color: var(--white);
+        font-family: 'inter', sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+</style>
+
+<body class="nord">
+    <div id="pane">
+        <div id="settings"></div>
+        <div id="nav"></div>
+    </div>
+    <div id="content"></div>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>

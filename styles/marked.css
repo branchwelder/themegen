@@ -1,0 +1,23 @@
+.heading1 {
+  color: var(--pink);
+}
+
+.heading2 {
+  color: var(--orange);
+}
+
+.heading3 {
+  color: var(--yellow);
+}
+
+.heading4 {
+  color: var(--green);
+}
+
+.heading5 {
+  color: var(--blue);
+}
+
+.heading6 {
+  color: var(--purple);
+}
