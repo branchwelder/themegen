@@ -27,6 +27,11 @@
   flex-grow: 1;
 }
 
+#marked-container {
+  max-width: 50rem;
+  margin: auto;
+}
+
 .colorblock {
   background-color: var(--color);
   height: 10vh;

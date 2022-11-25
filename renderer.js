@@ -1,6 +1,6 @@
-/*
-HEADINGS
-*/
+/***********************************
+              HEADINGS
+************************************/
 function heading(text, level) {
   const escapedText = text.toLowerCase().replace(/[^\w]+/g, "-");
 
@@ -30,9 +30,9 @@ function escapeForHTML(input) {
 const codeHeader = (language) =>
   `<div class="desc"><span class="codeHead">${language}</span></div>`;
 
-/*
-CODE
-*/
+/***********************************
+              CODE
+************************************/
 function code(code, options) {
   const language = options;
   const validLang = !!(language && hljs.getLanguage(language));
@@ -41,15 +41,14 @@ function code(code, options) {
     ? hljs.highlight(language, code).value
     : escapeForHTML(code);
   return String.raw`
-    <div class="codeblock">
+    <div class="codeblock" language=${language}>
       <pre><code class="hljs ${language}">${highlighted}</code></pre>
     </div>`;
 }
 
-/*
-RENDERER
-*/
-// Build a custom renderer for marked
+/***********************************
+              RENDERER
+************************************/
 const renderer = {
   heading,
   code,

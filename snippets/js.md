@@ -1,3 +1,5 @@
+# JavaScript
+
 ```js
 setTimeout(function () {
   document.onmousemove = document.onkeypress = function () {

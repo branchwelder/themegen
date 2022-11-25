@@ -1,5 +1,3 @@
-let THEME = "blue-hour";
-
 function getAvailableThemes() {
   for (const sheet of document.styleSheets) {
     if (sheet.title === "themes") {
@@ -8,12 +6,9 @@ function getAvailableThemes() {
   }
 }
 
-function changeTheme(new_theme) {
+function changeTheme(current_theme, new_theme) {
   const r = document.body;
-  r.style.removeProperty("--black");
-  r.style.removeProperty("--white");
-  r.classList.replace(THEME, new_theme);
-  THEME = new_theme;
+  r.classList.replace(current_theme, new_theme);
 }
 
 export { getAvailableThemes, changeTheme };

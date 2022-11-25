@@ -15,6 +15,7 @@ const colors = [
   "blue",
   "purple",
 ];
+let CURRENT_THEME = "blue-hour";
 
 const controlButton = (buttonText, buttonColor, buttonAction) => html`<button
   style="--buttonColor: var(--${buttonColor})"
@@ -26,8 +27,11 @@ const controlButton = (buttonText, buttonColor, buttonAction) => html`<button
 const themeButtons = (themes) => html`<h3 class="controlHeading">themes</h3>
   <div class="controlButtonContainer">
     ${repeat(themes, (rule) => {
-      const text = rule.selectorText.slice(1);
-      return controlButton(text, "blue", (e) => changeTheme(text));
+      const theme_name = rule.selectorText.slice(1);
+      return controlButton(theme_name, "blue", (e) => {
+        changeTheme(CURRENT_THEME, theme_name);
+        CURRENT_THEME = theme_name;
+      });
     })}
   </div>`;
 
@@ -51,7 +55,7 @@ const view = html`<div id="view">
     )}
   </div>
   <div id="controls"></div>
-  <div id="preview"></div>
+  <div id="preview"><div id="marked-container"></div></div>
 </div>`;
 
 const controls = (themes, snippets) => html`
@@ -72,11 +76,11 @@ function renderControls() {
 
 function renderPreview(exName) {
   // Fetch a markdown file and render it with marked
-  fetch(`./content/${exName}.md`)
+  fetch(`./snippets/${exName}.md`)
     .then((response) => response.blob())
     .then((blob) => blob.text())
     .then((markdown) =>
-      renderMarkdown(markdown, document.getElementById("preview"))
+      renderMarkdown(markdown, document.getElementById("marked-container"))
     );
 }
 
