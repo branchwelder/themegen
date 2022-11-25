@@ -1,34 +1,43 @@
-.heading1 {
-  color: var(--pink);
-}
-
-.heading2 {
+/***********************************
+          BLOCK STYLES
+************************************/
+/* Heading 1 */
+.marked-h1 {
   color: var(--orange);
 }
 
-.heading3 {
+/* Heading 2 */
+.marked-h2 {
+  color: var(--pink);
+}
+
+/* Heading 3 */
+.marked-h3 {
   color: var(--yellow);
 }
 
-.heading4 {
+/* Heading 4 */
+.marked-h4 {
   color: var(--green);
 }
 
-.heading5 {
+/* Heading 5 */
+.marked-h5 {
   color: var(--blue);
 }
 
-.heading6 {
+/* Heading 6 */
+.marked-h6 {
   color: var(--purple);
 }
 
-.codeblock {
-  /* margin: 1rem 0; */
+/* Code block */
+.marked-codeblock {
   position: relative;
 }
 
 /* Makes a lighter background and language label behind the codeblock. */
-.codeblock::before {
+.marked-codeblock::before {
   content: attr(language);
   background-color: var(--black);
   filter: brightness(1.2);
@@ -43,4 +52,77 @@
   font-size: 0.8rem;
   text-align: right;
   font-family: "inconsolata", monospace;
+  border-left: 1px solid var(--pink);
+  border-right: 1px solid var(--green);
+}
+
+.marked-codeblock:hover::before {
+  border-top: 1px solid var(--green);
+  border-bottom: 1px solid var(--pink);
+}
+
+/* Paragraph */
+.marked-paragraph {
+  font-weight: 300;
+}
+
+/***********************************
+          INLINE STYLES
+************************************/
+/* Bold */
+.marked-strong {
+  color: var(--pink);
+  font-weight: 800;
+}
+
+/* Italic */
+.marked-emph {
+  color: var(--cyan);
+  font-style: italic;
+}
+
+/* Both bold and italic */
+.marked-strong .marked-emph {
+  color: var(--yellow);
+}
+
+/* Italic */
+.marked-codespan {
+  color: var(--green);
+  font-family: "inconsolata", monospace;
+  position: relative;
+}
+
+/* Makes a lighter background and language label behind the codeblock. */
+.marked-codespan::before {
+  content: "";
+  background-color: var(--black);
+  filter: brightness(1.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 0.5rem;
+}
+
+/* Strikethrough */
+.marked-strikethrough {
+  text-decoration: line-through;
+  font-style: italic;
+  filter: brightness(0.8);
+  font-weight: 100;
+}
+
+/* Links */
+.marked-link:link {
+  color: var(--blue);
+}
+.marked-link:visited {
+  color: var(--purple);
+}
+.marked-link:hover {
+  color: var(--orange);
+}
+.marked-link:active {
+  color: var(--cyan);
 }

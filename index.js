@@ -20,7 +20,8 @@ let CURRENT_THEME = "blue-hour";
 const controlButton = (buttonText, buttonColor, buttonAction) => html`<button
   style="--buttonColor: var(--${buttonColor})"
   class="controlButton"
-  @click=${buttonAction}>
+  @click=${buttonAction}
+>
   ${buttonText}
 </button>`;
 
@@ -49,9 +50,7 @@ const view = html`<div id="view">
     ${repeat(
       colors.slice(1),
       (color) =>
-        html`<div
-          class="colorblock"
-          style="--color: var(--${color})"></div>`
+        html`<div class="colorblock" style="--color: var(--${color})"></div>`
     )}
   </div>
   <div id="controls"></div>
@@ -88,5 +87,5 @@ function renderPreview(exName) {
 window.onload = function () {
   render(view, document.body);
   renderControls();
-  renderPreview("python");
+  renderPreview("markdown");
 };
