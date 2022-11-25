@@ -21,3 +21,35 @@
 .heading6 {
   color: var(--purple);
 }
+
+.codeblock {
+  border: 1px solid var(--blue);
+  margin-bottom: 1rem;
+  /* background: linear-gradient(var(--blue) calc(100% * 1), var(--black) 0); */
+}
+
+.codeHead {
+  background-color: var(--blue);
+  padding: 0.2rem;
+  color: var(--black);
+  font-weight: bold;
+  text-align: right;
+}
+
+.desc {
+  display: flex;
+  justify-content: end;
+}
+
+pre {
+  margin: 0;
+}
+
+code {
+  font-family: "inconsolata", monospace;
+}
+
+#pane {
+  position: sticky;
+  top: 0;
+}

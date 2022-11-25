@@ -1,7 +1,4 @@
-import { html } from "https://cdn.jsdelivr.net/npm/lit-html@2.4.0/lit-html.min.js";
-import { repeat } from "https://cdn.jsdelivr.net/npm/lit-html@2.4.0/directives/repeat.js";
-
-let THEME = "nord";
+let THEME = "blue-hour";
 
 function getAvailableThemes() {
   for (const sheet of document.styleSheets) {
@@ -19,15 +16,4 @@ function changeTheme(new_theme) {
   THEME = new_theme;
 }
 
-const themeButton = (themeName) =>
-  html`<button
-    style="--buttonColor: var(--blue)"
-    @click=${(e) => changeTheme(themeName.slice(1))}>
-    ${themeName.slice(1)}
-  </button>`;
-
-const themeSettings = html`<div id="themeButtonContainer">
-  ${repeat(getAvailableThemes(), (rule) => themeButton(rule.selectorText))}
-</div>`;
-
-export { themeSettings };
+export { getAvailableThemes, changeTheme };

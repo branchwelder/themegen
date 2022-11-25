@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>themer</title>
+    <title>theme-gen</title>
     <!-- Import libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -26,6 +26,11 @@
         font-weight: 1 999;
     }
 
+    @font-face {
+        font-family: "arista";
+        src: url("./fonts/Arista.ttf");
+    }
+
     html,
     body {
         margin: 0;
@@ -42,12 +47,7 @@
     }
 </style>
 
-<body class="nord">
-    <div id="pane">
-        <div id="settings"></div>
-        <div id="nav"></div>
-    </div>
-    <div id="content"></div>
+<body class="blue-hour">
     <script type="module" src="./index.js"></script>
 </body>
 

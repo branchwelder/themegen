@@ -3,14 +3,14 @@
 .contrast {
   --black: #000000;
   --white: #ffffff;
-  --pink: #FF1493;
-  --red: #FF0000;
-  --orange: #FFA500;
-  --yellow: #FFFF00;
-  --green: #00FF00;
-  --cyan: #00FFFF;
-  --blue: #00BFFF;
-  --purple: #DA70D6;
+  --pink: #ff1493;
+  --red: #ff0000;
+  --orange: #ffa500;
+  --yellow: #ffff00;
+  --green: #00ff00;
+  --cyan: #00ffff;
+  --blue: #00bfff;
+  --purple: #da70d6;
 }
 
 .nord {
@@ -67,13 +67,39 @@
 
 .brown {
   --black: #493730;
-  --white: antiquewhite;
-  --pink: salmon;
-  --red: orangered;
-  --orange: coral;
-  --yellow: gold;
-  --green: yellowgreen;
-  --cyan: turquoise;
-  --blue: deepskyblue;
-  --purple: plum;
+  --white: #faebd7;
+  --pink: #fa8072;
+  --red: #ff4400;
+  --orange: #ff7f50;
+  --yellow: #ffd700;
+  --green: #9acd32;
+  --cyan: #40e0d0;
+  --blue: #00bfff;
+  --purple: #dda0dd;
 }
+
+.blue-hour {
+  --black: hsl(212, 41%, 21%);
+  --white: hsl(34, 78%, 91%);
+  --pink: hsl(343, 61%, 67%);
+  --red: hsl(354, 91%, 64%);
+  --orange: hsl(16, 90%, 67%);
+  --yellow: hsl(40, 84%, 68%);
+  --green: hsl(80, 53%, 63%);
+  --cyan: hsl(174, 72%, 56%);
+  --blue: hsl(195, 100%, 38%);
+  --purple: hsl(281, 33%, 52%);
+}
+
+/* .test {
+  --black: hsl(212, 41%, 21%);
+  --white: hsl(34, 78%, 91%);
+  --pink: hsl(343, 61%, 67%);
+  --red: hsl(354, 91%, 64%);
+  --orange: hsl(16, 90%, 67%);
+  --yellow: hsl(40, 84%, 68%);
+  --green: hsl(80, 53%, 63%);
+  --cyan: hsl(174, 72%, 56%);
+  --blue: hsl(195, 100%, 38%);
+  --purple: hsl(281, 33%, 52%);
+} */
