@@ -27,6 +27,10 @@
   flex-grow: 1;
 }
 
+#gutter {
+  min-width: 1rem;
+}
+
 #marked-container {
   max-width: 50rem;
   margin: auto;

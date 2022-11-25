@@ -1,3 +1,5 @@
+// This is where I customize the functions that the marked.js renderer calls
+
 /***********************************
               HEADINGS
 ************************************/

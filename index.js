@@ -56,6 +56,7 @@ const view = html`<div id="view">
   </div>
   <div id="controls"></div>
   <div id="preview"><div id="marked-container"></div></div>
+  <div id="gutter"></div>
 </div>`;
 
 const controls = (themes, snippets) => html`
